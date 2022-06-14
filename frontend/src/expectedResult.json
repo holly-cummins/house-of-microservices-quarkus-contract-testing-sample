@@ -1,0 +1,8 @@
+{
+  "head": {},
+  "hair": { "state": "frizzled" },
+  "legs": {},
+  "torso": { "state": "hungry" },
+  "eyes": { "state": "awake" },
+  "room": "kitchen"
+}
