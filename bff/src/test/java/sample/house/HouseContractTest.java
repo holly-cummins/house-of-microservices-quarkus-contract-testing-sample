@@ -14,7 +14,6 @@ import au.com.dius.pact.provider.junit5.PactVerificationInvocationContextProvide
 
 @Provider("House")
 @PactFolder("pacts")
-@IgnoreNoPactsToVerify
 @QuarkusTest // This starts the server on port 8081 for convenience in testing
 public class HouseContractTest {
 
