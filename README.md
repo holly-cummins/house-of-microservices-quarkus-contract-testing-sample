@@ -46,3 +46,5 @@ To run all the tests, do
 cd bff
 mvn test
 ```
+
+For a full set of steps for a live coding demo, see the [demo script](./demo-script.md).
