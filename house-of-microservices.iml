@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
+  <component name="CheckStyle-IDEA-Module" serialisationVersion="2">
+    <option name="activeLocationsIds" />
+  </component>
   <component name="EclipseModuleManager">
     <conelement value="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER" />
     <src_description expected_position="2">

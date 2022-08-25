@@ -17,7 +17,7 @@ import sample.rooms.Bathroom;
 import sample.rooms.Bedroom;
 import sample.rooms.Kitchen;
 
-@Path("")
+@Path("/resident")
 public class ResidentResource {
     private static ExecutorService threadpool = Executors.newCachedThreadPool();
 

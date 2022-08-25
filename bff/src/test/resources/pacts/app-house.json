@@ -7,7 +7,7 @@
   },
   "interactions": [
     {
-      "description": "a request for the residents current state",
+      "description": "a request for the resident",
       "request": {
         "method": "GET",
         "path": "/resident",
