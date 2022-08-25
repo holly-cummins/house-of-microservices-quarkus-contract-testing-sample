@@ -32,12 +32,13 @@ Open a terminal within each IDE (or two OS terminals).
 
 2. Briefly tour the code.
 3. Start the back-end with `mvn quarkus:dev`. Visit http://localhost:8080/resident to show the json which is passed to the front end. 
-4. Start the front end with `npm run`. Visit http://localhost:3000 to show the app. 
+4. Start the front end with `npm start`. Visit http://localhost:3000 to show the app. 
+   > You may need to build it first with `npm install`. On a Mac M1 you may also first have to run `npm i @pact-foundation/pact-node`, then `npm install`.
 5. Back to the code, and explain the model of a `Resident` which includes several body parts, that may evolve at different paces.
 6. Show the tests. Because of course there are tests, we're responsible developers. 
    1. Run the back-end tests in IntelliJ (they're also running continuously in Quarkus)
-   2. Create a new terminal and run `npm run test:watch`
-7. Refactor! Torso's a big word, do we even know what that means?In IntelliJ, use `shift-F6` to rename `getTorso` to `getStomach`. 
+   2. Create a new terminal and run `npm run test`
+7. Refactor `bff/src/main/java/sample/resident/Resident.java`! Torso's a big word, do we even know what that means? In IntelliJ, use `shift-F6` to rename `getTorso` to `getStomach`. 
 8. Sense check. Run the Java tests (all working), run the JavaScript tests, all working. 
 9. Visit the web page again. It's all going to work, right, because the tests all worked?
 10. Oh no, we're missing a stomach! What's going on? Check the json at http://localhost:8080/resident, see that the json has changed.
