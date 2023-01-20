@@ -6,9 +6,16 @@ name: Node.js CI
 on:
   push:
     branches: [ "main" ]
+    paths-ignore:
+      - 'bff/**'
+      - '**/*.md'
+      - '.github/workflows/maven.yml'
   pull_request:
     branches: [ "main" ]
-
+    paths-ignore:
+      - 'bff/**'
+      - '**/*.md'
+      - '.github/workflows/maven.yml'
 jobs:
   build:
 
