@@ -14,11 +14,13 @@ on:
     paths-ignore:
       - 'frontend/**'
       - '**/*.md'
+      - '.github/workflows/node.js.yml'
   pull_request:
     branches: [ "main" ]
     paths-ignore:
       - 'frontend/**'
       - '**/*.md'
+      - '.github/workflows/node.js.yml'
 
 jobs:
   build:
