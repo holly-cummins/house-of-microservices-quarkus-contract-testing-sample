@@ -12,7 +12,7 @@
     "fontsource-ibm-plex-sans": "^3.0.9",
     "react": "^16.14.0",
     "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0",
+    "react-scripts": "5.0.1",
     "react-table-6": "^6.11.0",
     "universal-cookie": "^4.0.4"
   },
