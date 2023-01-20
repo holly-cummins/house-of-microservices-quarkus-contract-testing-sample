@@ -44,10 +44,10 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>au.com.dius.pact.provider</groupId>
-            <artifactId>junit5</artifactId>
-            <version>${pact.version}</version>
-            <scope>test</scope>
+            <groupId>io.quarkiverse.pact</groupId>
+            <artifactId>quarkus-pact-provider</artifactId>
+            <version>0.2</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
     <build>
