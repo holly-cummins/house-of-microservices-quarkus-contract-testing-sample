@@ -3,11 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@pact-foundation/pact-node": "^10.17.6",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "axios": "^0.21.2",
+    "axios": "^1.0.0",
     "faker": "^5.1.0",
     "fontsource-open-sans": "^4.0.0",
     "react": "^16.14.0",
@@ -19,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!axios)/\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,7 +34,11 @@
     ]
   },
   "devDependencies": {
-    "@pact-foundation/pact": "^9.12.2",
-    "jest-pact": "^0.8.1"
+    "@pact-foundation/pact": "^10.4.1",
+    "@pact-foundation/pact-node": "^10.17.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "jest-pact": "^0.10.2"
   }
 }
