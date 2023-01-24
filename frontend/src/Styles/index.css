@@ -1,60 +1,60 @@
 body {
-  margin: 0;
-  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    margin: 0;
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 .page {
-  display: flex;
+    display: flex;
 }
 
 .graphics {
-  display: flex;
+    display: flex;
 }
 
 .body {
-  position: relative;
-  height: 600px;
-  width: 600px;
-  left: -240px;
-  top: -60px;
+    position: relative;
+    height: 600px;
+    width: 600px;
+    left: -240px;
+    top: -60px;
 }
 
 .bodypart {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
 }
 
 .house-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: -100px;
-  left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100px;
+    left: 0;
 }
 
 .house {
-  position: relative;
-  top: -120px;
-  height: 500px;
-  width: 600px;
+    position: relative;
+    top: -120px;
+    height: 500px;
+    width: 600px;
 }
 
 .roomLabel {
-  height: 80px;
+    height: 80px;
 }
 
 .residentLabel {
-  position: relative;
-  top: -180px;
+    position: relative;
+    top: -180px;
 }

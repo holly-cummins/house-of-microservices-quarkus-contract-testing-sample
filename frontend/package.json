@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.21.2",
     "faker": "^5.1.0",
-    "fontsource-ibm-plex-sans": "^3.0.9",
+    "fontsource-open-sans": "^4.0.0",
     "react": "^16.14.0",
     "react-dom": "^16.13.0",
     "react-scripts": "5.0.1",
