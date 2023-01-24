@@ -2,64 +2,69 @@
   "consumer": {
     "name": "App"
   },
-  "provider": {
-    "name": "House"
-  },
   "interactions": [
     {
       "description": "a request for the resident",
       "request": {
-        "method": "GET",
-        "path": "/resident",
         "headers": {
           "Accept": "application/json"
-        }
+        },
+        "method": "GET",
+        "path": "/resident"
       },
       "response": {
-        "status": 200,
-        "headers": {
-          "Content-Type": "application/json"
-        },
         "body": {
-          "head": {
+          "eyes": {
+            "state": "awake"
           },
           "hair": {
             "state": "frizzled"
           },
-          "legs": {
-          },
+          "head": {},
+          "legs": {},
+          "room": "kitchen",
           "torso": {
             "state": "full"
-          },
-          "eyes": {
-            "state": "awake"
-          },
-          "room": "kitchen"
+          }
+        },
+        "headers": {
+          "Content-Type": "application/json"
         },
         "matchingRules": {
-          "$.body.hair.state": {
-            "match": "regex",
-            "regex": "^(frizzled|combed)$"
-          },
-          "$.body.torso.state": {
-            "match": "regex",
-            "regex": "^(full|hungry)$"
-          },
           "$.body.eyes.state": {
             "match": "regex",
             "regex": "^(awake|asleep)$"
           },
+          "$.body.hair.state": {
+            "match": "regex",
+            "regex": "^(frizzled|combed)$"
+          },
           "$.body.room": {
             "match": "regex",
             "regex": "^(kitchen|bedroom|bathroom)$"
+          },
+          "$.body.torso.state": {
+            "match": "regex",
+            "regex": "^(full|hungry)$"
           }
-        }
+        },
+        "status": 200
       }
     }
   ],
   "metadata": {
+    "pact-js": {
+      "version": "10.4.1"
+    },
+    "pactRust": {
+      "ffi": "0.4.0",
+      "models": "1.0.4"
+    },
     "pactSpecification": {
       "version": "2.0.0"
     }
+  },
+  "provider": {
+    "name": "House"
   }
 }
