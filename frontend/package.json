@@ -7,7 +7,7 @@
     "@faker-js/faker": "^7.6.0",
     "fontsource-open-sans": "^4.0.0",
     "react": "^16.14.0",
-    "react-dom": "^16.13.0",
+    "react-dom": "^16.14.0",
     "react-scripts": "5.0.1",
     "react-table-6": "^6.11.0",
     "universal-cookie": "^4.0.4"
