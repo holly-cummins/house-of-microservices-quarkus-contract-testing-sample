@@ -43,7 +43,7 @@ jobs:
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
       if: github.event_name != 'pull_request'
-      uses: advanced-security/maven-dependency-submission-action@d682d5d68a398c90e9b35f8c564cd8e1918d6a24
+      uses: advanced-security/maven-dependency-submission-action@c5ad0fd6b977364190852883b46728f25a9617c3
       with:
         directory: './bff'
         ignore-maven-wrapper: true # if left as the default it will get confused and double-nest and look in bff/bff for the wrapper
