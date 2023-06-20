@@ -47,6 +47,12 @@
 # *.iml
 # *.ipr
 
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/misc.xml
+
+*.iml
+
 # CMake
 cmake-build-*/
 
@@ -152,3 +158,5 @@ Temporary Items
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij,macos
 
+/bff.iml
+/bff/.idea/uiDesigner.xml
