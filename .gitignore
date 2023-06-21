@@ -14,7 +14,7 @@
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
-
+**/.idea/**/misc.xml
 # AWS User-specific
 .idea/**/aws.xml
 
@@ -30,9 +30,10 @@
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 
+**/.idea/**/libraries
+
 # Gradle
 .idea/**/gradle.xml
-.idea/**/libraries
 
 # Gradle and Maven with auto-import
 # When using Gradle or Maven with auto-import, you should exclude module files,
