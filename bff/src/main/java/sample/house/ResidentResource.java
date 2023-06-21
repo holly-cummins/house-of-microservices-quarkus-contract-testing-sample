@@ -6,12 +6,13 @@ import java.util.Objects;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import jakarta.transaction.Transactional;
 import jakarta.ws.rs.CookieParam;
 import jakarta.ws.rs.GET;
+import jakarta.ws.rs.PUT;
 import jakarta.ws.rs.Path;
-import jakarta.ws.rs.Produces;
-import jakarta.ws.rs.core.MediaType;
 
+import sample.TrackerEntity;
 import sample.resident.Resident;
 import sample.rooms.Bathroom;
 import sample.rooms.Bedroom;
@@ -19,11 +20,11 @@ import sample.rooms.Kitchen;
 
 @Path("/resident")
 public class ResidentResource {
-    private static ExecutorService threadpool = Executors.newCachedThreadPool();
+    private static final ExecutorService threadpool = Executors.newCachedThreadPool();
 
     // This is a non-cloud-safe way of handling session affinity.
     // For simplicity, it will do!
-    private static Map<String, Resident> residents = new HashMap<>();
+    private static final Map<String, Resident> residents = new HashMap<>();
 
     private Resident createResident(String sessionId) {
         final Resident abby = new Resident();
@@ -47,10 +48,18 @@ public class ResidentResource {
     }
 
     @GET
-    @Produces(MediaType.APPLICATION_JSON)
     public Resident getResident(@CookieParam("resident-name") String residentName) {
         Resident abby = Objects.requireNonNullElseGet(residents.get(residentName), () -> createResident(residentName));
         return abby;
+    }
+
+    @GET
+    @Path("tracking")
+    @Transactional
+    public String getTracking() {
+        new TrackerEntity().persist();
+        long count = TrackerEntity.count();
+        return "The alarm has been called " + count + " times.";
     }
 
     /*
