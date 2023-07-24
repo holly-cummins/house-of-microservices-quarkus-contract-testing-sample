@@ -34,7 +34,7 @@
     ]
   },
   "devDependencies": {
-    "@pact-foundation/pact": "^11.0.2",
+    "@pact-foundation/pact": "^12.1.0",
     "@pact-foundation/pact-node": "^10.17.7",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^9.5.0",
