@@ -36,7 +36,7 @@
   "devDependencies": {
     "@pact-foundation/pact": "^12.4.0",
     "@pact-foundation/pact-node": "^10.17.7",
-    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "jest-pact": "^0.11.0"
